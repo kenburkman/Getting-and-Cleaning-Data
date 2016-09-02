@@ -1,0 +1,30 @@
+---
+title: "CodeBook"
+author: "kenburkman"
+date: "September 1, 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This is the file that describes, "... the variables, the data, and any transformations or work that you performed to clean up the data called CodeBook.md."
+
+## The Variables
+
+The variables consist of the Subject (1 of 1:30), an Activity (1 of 1:6) and a subset of the 561 original variables found in the UCI dataset found at [the UCI website on Human Activity Recognition Using Smartphones] (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).  The subset variables are only those which were either a mean or standard deviation.
+
+## The Data
+
+The data are a consolidation of the test and training sets, as well as the corresponding subject and activity, retrieved from the website described above.  
+
+##The Transformations
+
+The following changes were made to field titles (i.e., column names):
+--- removed all punctuation
+--- replaced "t" with the word "total
+--- replaced "f" with the word "force"
+--- replaced "Acc" with the word "acceleration"
+--- replaced "BodyBody"--what _IS_ that anyway?!--with the word "body"
+--- changed all letters to lower case 
